@@ -6,6 +6,8 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/*header*/
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -41,4 +43,114 @@ body {
     font-weight: 400;
     font-size: 12px;
     color: #9a9a9a;
+}
+
+/*top*/
+.top {
+    margin-bottom: 75px;
+}
+.top__images {
+    max-width: 1720px;
+    min-height: 545px;
+    margin: 0 auto;
+    background: url("../images/top-bg.jpeg") no-repeat center;
+    background-size: cover;
+}
+.top__wrapper {
+    margin-top: -450px;
+}
+.top__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.top__inner-img {
+    margin-left: 145px;
+}
+.top__inner-form {
+    max-width: 570px;
+    width: 100%;
+}
+.top__inner-suptitle {
+    margin: 70px 0 25px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.top__inner-title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 60px;
+    color: #fff;
+}
+.top__inner-text {
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.top-form {
+    padding: 20px;
+    background-color: #fff;
+}
+.top-form form {
+    position: relative;
+    border: 1px solid #c8dcba;
+}
+.top-form__inner {
+    padding: 50px 50px 118px 50px;
+}
+.top-form__title {
+    width: 190px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #303030;
+    text-transform: uppercase;
+}
+.top-form input {
+    width: 195px;
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #c8dcba;
+    outline: none;
+}
+.top-form input::placeholder {
+    color: #c8dcba;
+}
+.top-form input + input {
+    margin-left: 30px;
+}
+.top-form button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 60px;
+    padding: 22px 110px 22px 70px;
+    border: none;
+    background-color: #7eb252;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.top-form button:after {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    content: "";
+    width: 31px;
+    height: 9px;
+    background: url("../images/arrow-right.png");
 }

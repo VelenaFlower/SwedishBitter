@@ -1,8 +1,13 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -153,4 +158,41 @@ body {
     width: 31px;
     height: 9px;
     background: url("../images/arrow-right.png");
+}
+
+/* advantages*/
+.advantages__inner {
+    display: flex;
+    justify-content: space-around;
+}
+.advantages__item {
+    position: relative;
+    width: 241px;
+    padding: 35px 0 0 40px;
+}
+.advantages__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 5px solid rgba(123, 178, 82, .3);
+    border-radius: 50%;
+}
+.advantages__item-number {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #a4c58c;
+    border-bottom: 3px solid #a4c58c;
+}
+.advantages__item-number span {
+    font-size: 30px;
+}
+.advantages__item-text {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
 }

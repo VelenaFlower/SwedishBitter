@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 body {
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.container__fluid {
+    max-width: 1720px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /*header*/
@@ -150,7 +156,8 @@ body {
     cursor: pointer;
     outline: none;
 }
-.top-form button:after {
+.top-form button:after,
+.list__link a:after {
     position: absolute;
     top: 25px;
     right: 60px;
@@ -161,6 +168,9 @@ body {
 }
 
 /* advantages*/
+.advantages {
+    margin-bottom: 200px;
+}
 .advantages__inner {
     display: flex;
     justify-content: space-around;
@@ -195,4 +205,203 @@ body {
     padding-top: 20px;
     font-size: 16px;
     line-height: 24px;
+}
+
+/*list*/
+.list__title {
+    max-width: 470px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #303030;
+}
+.list__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    background-color: #f6f9f3;
+}
+.list__inner:before,
+.list__inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f9f3;
+}
+.list__inner:before {
+    left: 100%;
+}
+.list__inner:after {
+    right: 100%;
+}
+.tabs {
+    width: 100%;
+    padding-right: 20px;
+}
+.tabs__content {
+    margin-top: -170px;
+    position: relative;
+    min-width: 500px;
+    height: 689px;
+    background: url("../images/list-images.png") no-repeat top center;
+    background-size: cover;
+}
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 24px 40px 24px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #303030;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e6efde;
+    cursor: pointer;
+}
+.tab.active {
+    position: relative;
+}
+.tab.active:after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    width: 9px;
+    height: 14px;
+    background: url("../images/chevron.svg");
+}
+.tab span {
+    margin-right: 18px;
+    color: #a4c58c;
+}
+.tab-item {
+    position: absolute;
+    display: none;
+    width: 43px;
+    height: 43px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #a5c98a;
+    border: 9px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+}
+.tab-item:first-child {
+    display: block;
+}
+.item-1 {
+    top: 182px;
+    left: 150px;
+}
+.item-2 {
+    top: 235px;
+    left: 305px;
+}
+.item-3 {
+    top: 135px;
+    left: 227px;
+}
+.item-4 {
+    top: 210px;
+    left: 227px;
+}
+.item-5 {
+    top: 15px;
+    left: 227px;
+}
+.item-6 {
+    top: 350px;
+    left: 260px;
+}
+.item-7 {
+    top: 20px;
+    left: 227px;
+}
+.item-8 {
+    top: 173px;
+    left: 227px;
+}
+.item-9 {
+    top: 100px;
+    left: 228px;
+}
+.tabs__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs__box .tab {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: none;
+}
+.tabs__box .tab span {
+    font-size: 12px;
+}
+.tabs__box .tab:first-child,
+.tabs__box .tab:nth-child(3) {
+    padding-right: 25px;
+    border-right: 1px solid #e6efde;
+}
+.tabs__box .tab:last-child,
+.tabs__box .tab:nth-child(2) {
+    padding-left: 25px;
+}
+.tabs__box .tab.active:after {
+    display: none;
+}
+.tabs__reviews {
+    position: absolute;
+    bottom: -20px;
+    max-width: 430px;
+    padding: 20px;
+    background-color: #f6f9f3;
+}
+.tabs__reviews-inner {
+    padding: 30px 50px 30px 40px;
+    border: 1px solid #a5c98a;
+}
+.tabs__reviews-text {
+    line-height: 24px;
+    color: #303030;
+}
+.tabs__reviews-link {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7eb252;
+    background-color: #f6f9f3;
+}
+.list__link {
+    display: flex;
+    justify-content: flex-end;
+}
+.list__link a {
+    position: relative;
+    width: 500px;
+    height: 70px;
+    margin-top: 20px;
+    padding: 30px 145px 30px 124px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7eb252;
+    outline: none;
+}
+.list__link a:after {
+    top: 31px;
+    right: 95px;
 }

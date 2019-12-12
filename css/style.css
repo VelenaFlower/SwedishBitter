@@ -6,6 +6,7 @@
 body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    color: #303030;
 }
 .container {
     max-width: 1200px;
@@ -119,7 +120,6 @@ body {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 1px;
-    color: #303030;
     text-transform: uppercase;
 }
 .top-form input {
@@ -132,16 +132,15 @@ body {
     border-bottom: 1px solid #c8dcba;
     outline: none;
 }
-.top-form input::placeholder {
+.top-form input::placeholder,
+.history__form input::placeholder {
     color: #c8dcba;
 }
 .top-form input + input {
     margin-left: 30px;
 }
-.top-form button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.form__btn {
+    position: relative;
     width: 250px;
     height: 60px;
     padding: 22px 110px 22px 70px;
@@ -156,7 +155,12 @@ body {
     cursor: pointer;
     outline: none;
 }
-.top-form button:after,
+.top-form button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.form__btn:after,
 .list__link a:after,
 .popularity__box-link:after {
     position: absolute;
@@ -215,7 +219,6 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    color: #303030;
 }
 .list__inner {
     position: relative;
@@ -258,7 +261,6 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #303030;
     text-transform: uppercase;
     border-bottom: 1px solid #e6efde;
     cursor: pointer;
@@ -371,7 +373,6 @@ body {
 }
 .tabs__reviews-text {
     line-height: 24px;
-    color: #303030;
 }
 .tabs__reviews-link {
     position: absolute;
@@ -410,9 +411,7 @@ body {
     padding-top: 200px;
 }
 .popularity__wrapper {
-    max-width: 1720px;
     min-height: 645px;
-    margin: 0 auto;
     background: url("../images/popularity.png") no-repeat left;
 }
 .popularity__inner {
@@ -431,18 +430,15 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    color: #303030;
 }
 .popularity__right-subtitle {
     padding: 50px 0;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    color: #303030;
 }
 .popularity__right-list {
     list-style: none;
-    color: #303030;
 }
 .popularity__right-list li {
     position: relative;
@@ -467,7 +463,6 @@ body {
 .popularity__box-text {
     padding: 30px 55px 30px 30px;
     border: 1px solid #c8dcba;
-    color: #303030;
 }
 .popularity__box-link {
     position: absolute;
@@ -483,4 +478,65 @@ body {
 }
 .popularity__box-link:after {
     right: 40px;
+}
+
+/*history*/
+.history {
+    margin-bottom: 200px;
+    padding-top: 270px;
+}
+.history__wrapper {
+    min-height: 920px;
+    background: url("../images/alonco.png") no-repeat right center;
+}
+.history__title {
+    max-width: 570px;
+    padding: 105px 0 50px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.history__text {
+    position: relative;
+    max-width: 700px;
+    padding: 70px 30px 75px 0;
+    background-color: #f6f9f3;
+}
+.history__text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 275px;
+    height: 100%;
+    background-color: #f6f9f3;
+}
+.history__text p {
+    margin: 15px 0;
+}
+.history__form {
+    max-width: 400px;
+    margin-left: 200px;
+    padding-left: 30px;
+}
+.history__form-title {
+    margin: 47px 0 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.history__form input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #cddcbc;
+    outline: none;
+}
+.history__form button {
+    width: 100%;
+    margin-top: 32px;
 }

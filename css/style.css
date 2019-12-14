@@ -162,7 +162,8 @@ body {
 }
 .form__btn:after,
 .list__link a:after,
-.popularity__box-link:after {
+.popularity__box-link:after,
+.composition__link-btn:after {
     position: absolute;
     top: 25px;
     right: 60px;
@@ -464,7 +465,8 @@ body {
     padding: 30px 55px 30px 30px;
     border: 1px solid #c8dcba;
 }
-.popularity__box-link {
+.popularity__box-link,
+.composition__link-btn {
     position: absolute;
     padding: 22px 86px 22px 27px;
     font-size: 14px;
@@ -627,5 +629,168 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    text-transform: uppercase;
+}
+
+/*composition*/
+.composition {
+    padding: 180px 0 100px;
+}
+.composition__item {
+    margin-bottom: 30px;
+    background-color: #f6f9f3;
+}
+.composition__item-inner {
+    position: relative;
+    width: 270px;
+    height: 270px;
+}
+.composition__item-inner1 {
+    background: url("../images/comp-1.png") no-repeat center;
+}
+.composition__item-inner2 {
+    background: url("../images/comp-2.png") no-repeat center;
+}
+.composition__item-inner3 {
+    background: url("../images/comp-3.png") no-repeat center;
+}
+.composition__item-inner4 {
+    background: url("../images/comp-4.png") no-repeat center;
+}
+.composition__item-inner5 {
+    background: url("../images/comp-5.png") no-repeat center;
+}
+.composition__item-inner6 {
+    background: url("../images/comp-6.png") no-repeat center;
+}
+.composition__item-inner7 {
+    background: url("../images/comp-7.png") no-repeat center;
+}
+.composition__item-inner8 {
+    background: url("../images/comp-8.png") no-repeat center;
+}
+.composition__item-inner9 {
+    background: url("../images/comp-9.png") no-repeat center;
+}
+.composition__item-inner10 {
+    background: url("../images/comp-10.png") no-repeat center;
+}
+.composition__item-inner11 {
+    background: url("../images/comp-11.png") no-repeat center;
+}
+.composition__item-num,
+.composition__item-name {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #a4c58c;
+    transform: rotate(-90deg);
+}
+.composition__item-num {
+    top: 27px;
+    left: 0;
+}
+.composition__item-name {
+    bottom: 15px;
+    right: 33px;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.composition__item-effect {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/comp-bg.png") no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: all .3s;
+}
+.composition__item-text {
+    padding: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+.composition__item-inner:hover .composition__item-effect {
+    opacity: 1;
+}
+.composition__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.composition__box {
+    margin-top: -60px;
+    max-width: 560px;
+    padding: 0 20px 0 50px;
+}
+.composition__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.composition__box-list {
+    list-style: none;
+}
+.composition__box-list li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 22px;
+    line-height: 22px;
+}
+.composition__box-list li:before,
+.composition__link-text:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #a4c58c;
+}
+.composition__link {
+    position: relative;
+    max-width: 830px;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 54px 90px 75px 58px;
+    border: 1px solid #c8dcba;
+}
+.composition__link-text {
+    position: relative;
+    padding-left: 25px;
+}
+.composition__link-text p {
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.composition__link-btn {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+}
+.composition__link-btn:after {
+    right: 35px;
+}
+.composition__item-inner11 .composition__item-text {
+    padding: 124px 123px 40px 49px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #303030;
+    text-align: left;
     text-transform: uppercase;
 }

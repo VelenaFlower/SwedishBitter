@@ -20,7 +20,8 @@ body {
 }
 
 /*header*/
-.header__inner {
+.header__inner,
+.footer__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,17 +32,20 @@ body {
     font-size: 16px;
     color: #9a9a9a;
 }
-.header__phone {
+.header__phone,
+.footer__phone {
     position: relative;
     font-weight: 500;
     font-size: 20px;
     text-align: right;
 }
-.header__phone a {
+.header__phone a,
+.footer__phone a {
     color: #303030;
     text-decoration: none;
 }
-.header__phone a:before {
+.header__phone a:before,
+.footer__phone a:before {
     content: "";
     position: absolute;
     top: 1px;
@@ -50,7 +54,8 @@ body {
     height: 16px;
     background-image: url("../images/phone.svg");
 }
-.header__phone-text {
+.header__phone-text,
+.footer__phone-text {
     padding-top: 3px;
     font-weight: 400;
     font-size: 12px;
@@ -1022,4 +1027,11 @@ body {
     padding-left: 60px;
     right: 0;
     bottom: 0;
+}
+
+.footer__link {
+    font-size: 12px;
+    color: #9a9a9a;
+    text-decoration: none;
+    border-bottom: 1px solid #9a9a9a;
 }

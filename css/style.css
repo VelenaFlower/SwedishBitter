@@ -466,7 +466,8 @@ body {
 .popularity__box-link,
 .composition__link-btn,
 .reviews__link-popup,
-.build__link {
+.build__link,
+.certificate__link {
     position: absolute;
     padding: 22px 86px 22px 27px;
     font-size: 14px;
@@ -481,7 +482,8 @@ body {
 .popularity__box-link:after,
 .composition__link-btn:after,
 .reviews__link-popup:after,
-.build__link:after {
+.build__link:after,
+.certificate__link:after {
     position: absolute;
     top: 25px;
     right: 40px;
@@ -950,4 +952,74 @@ body {
 .build__link {
     position: relative;
     display: inline-block;
+}
+
+/* certificate */
+.certificate {
+    position: relative;
+    padding-top: 250px;
+}
+.certificate .container-fluid {
+    overflow: visible;
+}
+.certificate__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.certificate__wrapper {
+    position: relative;
+    padding-top: 30px;
+    background-color: #f6f9f3;
+}
+.certificate__inner {
+    display: flex;
+    height: 535px;
+}
+.certificate__content {
+    max-width: 670px;
+    margin-right: 60px;
+    padding-left: 70px;
+}
+.certificate__text {
+    margin-bottom: 49px;
+    padding-right: 85px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.certificate__images {
+    position: relative;
+    top: -205px;
+}
+.certificate__box {
+    max-width: 570px;
+    padding: 15px 20px 20px;
+    background-color: #fff;
+}
+.certificate__box fieldset {
+    position: relative;
+    max-width: 530px;
+    padding: 45px 45px 95px 50px;
+    border: 1px solid #c8dcba;
+}
+.certificate__box legend {
+    margin-left: -10px;
+    padding: 0 5px 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a4c58c;
+}
+.certificate__box p {
+    margin: 0 0 10px;
+    line-height: 22px;
+}
+.certificate__link {
+    padding-left: 60px;
+    right: 0;
+    bottom: 0;
 }
